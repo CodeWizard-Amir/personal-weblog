@@ -1,0 +1,49 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Vazir;
+    src: url('./fonts/Vazir-Regular.eot');
+    src: url('./fonts/Vazir-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Vazir-Regular.woff2') format('woff2'),
+        url('./fonts/Vazir-Regular.woff') format('woff'),
+        url('./fonts/Vazir-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+html {
+    font-family: Vazir !important;
+}
+.desktopMode {
+    background: url('../assets/img/image.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@keyframes nois {
+    0% {
+        border: 4px solid red;
+    }
+    20% {
+        border: 4px solid yellow;
+    }
+    40% {
+        border: 4px solid green;
+    }
+    60% {
+        border: 4px solid blue;
+    }
+    80% {
+        border: 4px solid yellowgreen;
+    }
+    100% {
+        border: 4px solid orangered;
+    }
+}
+
+#bigImg {
+    animation: nois 8s infinite;
+}
